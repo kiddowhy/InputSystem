@@ -16,7 +16,7 @@ public class TestingInput : MonoBehaviour
         playerInput = GetComponent<PlayerInput>();
 
          playerInputAction = new PlayerInputAction();
-        playerInputAction.Player.Enable();
+       // playerInputAction.Player.Enable(); // c sharp
         playerInputAction.Player.Jump.performed += Jump;
         playerInputAction.Player.Movement.performed += Movement_performed;
     }
@@ -26,6 +26,19 @@ public class TestingInput : MonoBehaviour
         Debug.Log(context);
         
 
+    }
+    private void Update()
+    {
+        if(Keyboard.current.tKey.wasPressedThisFrame) 
+        {
+            playerInput.SwitchCurrentActionMap("UI");
+           // playerInputAction.Player.Disable(); //c sharp
+           // playerInputAction.UI.Enable(); //c sharp
+        }
+        if (Keyboard.current.yKey.wasPressedThisFrame)
+        {
+            playerInput.SwitchCurrentActionMap("Player");
+        }
     }
 
     private void FixedUpdate()
@@ -48,5 +61,11 @@ public class TestingInput : MonoBehaviour
             TestRigidBody.AddForce(Vector3.up * 5f, ForceMode.Impulse);
         }
         
+    }
+
+    public void Submit(InputAction.CallbackContext context)
+    {
+        Debug.Log("Submit"+context);
+
     }
 }
