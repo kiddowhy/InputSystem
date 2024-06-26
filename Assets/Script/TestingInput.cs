@@ -16,9 +16,13 @@ public class TestingInput : MonoBehaviour
         playerInput = GetComponent<PlayerInput>();
 
          playerInputAction = new PlayerInputAction();
-       // playerInputAction.Player.Enable(); // c sharp
-        playerInputAction.Player.Jump.performed += Jump;
+         playerInputAction.Player.Enable(); // c sharp
+         playerInputAction.Player.Jump.performed += Jump;
+        
+
+
         playerInputAction.Player.Movement.performed += Movement_performed;
+
     }
 
     private void Movement_performed(InputAction.CallbackContext context)
@@ -44,9 +48,9 @@ public class TestingInput : MonoBehaviour
     private void FixedUpdate()
     {
         
-        Vector3 inputVector = playerInputAction.Player.Movement.ReadValue<Vector3>();
+        Vector2 inputVector = playerInputAction.Player.Movement.ReadValue<Vector2>();
         float speed = 2f;
-        TestRigidBody.AddForce(new Vector3(inputVector.x, inputVector.y, inputVector.z) * speed, ForceMode.Force);
+        TestRigidBody.AddForce(new Vector3(inputVector.x, 0, inputVector.y) * speed, ForceMode.Force);
     }
 
 

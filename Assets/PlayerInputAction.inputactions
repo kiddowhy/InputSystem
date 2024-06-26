@@ -48,9 +48,20 @@
                     "isPartOfComposite": false
                 },
                 {
-                    "name": "3D Vector",
-                    "id": "379b6edf-20da-4428-9668-3d91c16e5469",
-                    "path": "3DVector",
+                    "name": "",
+                    "id": "2d21dd85-9988-4d97-bf40-553717bc6a83",
+                    "path": "<Gamepad>/leftStick",
+                    "interactions": "",
+                    "processors": "StickDeadzone",
+                    "groups": "Gamep",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "2D Vector",
+                    "id": "c6e62f63-4264-4b8b-bb3b-ed9eacf39b70",
+                    "path": "2DVector",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -60,91 +71,47 @@
                 },
                 {
                     "name": "up",
-                    "id": "5f419760-72e1-43d5-aae3-ee7bb6ef9ad5",
+                    "id": "9e4f9a4b-a027-4c99-9dab-ef367ea3c3d5",
                     "path": "<Keyboard>/upArrow",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Keyb",
+                    "groups": "",
                     "action": "Movement",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
                 {
                     "name": "down",
-                    "id": "c39a715c-96eb-4df6-86d4-49aac0dbca21",
+                    "id": "47e66501-9a5b-4804-b32e-82bf17336b8f",
                     "path": "<Keyboard>/downArrow",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Keyb",
+                    "groups": "",
                     "action": "Movement",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
                 {
                     "name": "left",
-                    "id": "1dcdcefe-537d-47ee-8bf4-61538b8c7612",
+                    "id": "01785d71-b096-4066-afdd-26f05a06aab2",
                     "path": "<Keyboard>/leftArrow",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Keyb",
+                    "groups": "",
                     "action": "Movement",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
                 {
                     "name": "right",
-                    "id": "92e88129-b7b7-46d4-84c4-03b71e7f7fc6",
+                    "id": "02e17900-d024-417e-8572-b1699c978bef",
                     "path": "<Keyboard>/rightArrow",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Keyb",
+                    "groups": "",
                     "action": "Movement",
                     "isComposite": false,
                     "isPartOfComposite": true
-                },
-                {
-                    "name": "forward",
-                    "id": "dbbb12c3-cb9e-43f6-a4c1-091dd87a7209",
-                    "path": "<Keyboard>/upArrow",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Keyb",
-                    "action": "Movement",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "backward",
-                    "id": "ff975c3a-4cdf-48b6-9ce2-1914629467be",
-                    "path": "<Keyboard>/downArrow",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Keyb",
-                    "action": "Movement",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "",
-                    "id": "ffd83db9-5739-46f3-b994-ce99246b7f64",
-                    "path": "<Gamepad>/buttonSouth",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Keyb",
-                    "action": "Movement",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "2d21dd85-9988-4d97-bf40-553717bc6a83",
-                    "path": "<Gamepad>/leftStick",
-                    "interactions": "",
-                    "processors": "StickDeadzone(min=0.15)",
-                    "groups": "Gamep",
-                    "action": "Movement",
-                    "isComposite": false,
-                    "isPartOfComposite": false
                 }
             ]
         },
